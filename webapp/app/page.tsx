@@ -58,8 +58,8 @@ export default function Home() {
             }}
             className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
           >
-            Elevate your <br />
-            tech <span className="text-[#407BBF]">interviews</span>
+            Concepts to <br />
+            <span className="text-[#407BBF]">Rhymes</span>
             <span className="font-inter text-[#407BBF]">.</span>
           </motion.h1>
           <motion.div
@@ -72,22 +72,34 @@ export default function Home() {
             }}
             className="flex flex-row justify-center z-20 mx-0 mb-0 mt-8 md:mt-0 md:mb-[35px] max-w-2xl md:space-x-8"
           >
-            <div className="w-1/2">
+            <div className="w-1/3">
               <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
-                Platform
+                Simplicity Meets Understanding
               </h2>
               <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
-                Full access to our platform, including all questions and
-                solutions.
+                We make even the most complex concepts easy to grasp by breaking
+                them down into fun and engaging nursery rhymes. Say goodbye to
+                long, confusing textbooks.
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/3">
               <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
-                Community
+                Engagement & Retention
               </h2>
               <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
-                Join a community of like-minded individuals, and learn from each
-                other.
+                Nursery rhymes have been proven to be one of the most effective
+                tools for engaging learners of all ages. They create an
+                unforgettable learning experience that increases knowledge
+                retention.
+              </p>
+            </div>
+            <div className="w-1/3">
+              <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
+                Effortless Learning
+              </h2>
+              <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal">
+                Say goodbye to boring textbooks and lectures. Our AI tool makes
+                learning as easy as humming a tune or watching a short video.
               </p>
             </div>
           </motion.div>

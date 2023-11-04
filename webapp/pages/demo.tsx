@@ -9,15 +9,27 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 const questions = [
   {
     id: 1,
-    name: "Behavioral",
-    description: "From LinkedIn, Amazon, Adobe",
-    difficulty: "Easy",
+    name: "Twinkle, Twinkle, Little Star",
+    description: "A classic nursery rhyme that evokes a sense of wonder and simplicity. Perfect for making complex ideas feel like a breeze.",
+    difficulty: "Ideal",
   },
   {
     id: 2,
-    name: "Technical",
-    description: "From Google, Meta, and Apple",
-    difficulty: "Medium",
+    name: "Mary Had a Little Lamb",
+    description: "An endearing nursery rhyme that makes learning complex concepts feel as natural and enjoyable as Mary's little lamb following her everywhere.",
+    difficulty: "Ideal",
+  },
+  {
+    id: 3,
+    name: "Row, Row, Row Your Boat",
+    description: "A lighthearted and soothing melody. Ideal for transforming complex topics into a peaceful and memorable experience.",
+    difficulty: "Ideal",
+  },
+  {
+    id: 4,
+    name: "Add More Songs",
+    description: "Explore our extensive collection of nursery rhymes and songs. Click here to see more options and make your learning experience even more enjoyable and personalized.",
+    difficulty: "Easy",
   },
 ];
 
@@ -307,34 +319,34 @@ export default function DemoPage() {
         <div className="w-full min-h-screen flex flex-col px-4 pt-2 pb-8 md:px-8 md:py-2 bg-[#FCFCFC] relative overflow-x-hidden">
           <p className="absolute w-full top-0 h-[60px] flex flex-row justify-between -ml-4 md:-ml-8">
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+              tune in!
             </span>
           </p>
           {completed ? (
@@ -810,22 +822,22 @@ export default function DemoPage() {
             className="absolute w-full md:w-1/2 top-0 h-[60px] flex flex-row justify-between"
           >
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
+              tune in!
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+              tune in!
             </span>
           </motion.p>
           <div className="w-full min-h-[60vh] md:w-1/2 md:h-screen flex flex-col px-4 pt-2 pb-8 md:px-0 md:py-2 bg-[#FCFCFC] justify-center">
@@ -843,11 +855,10 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    Select a question type
+                  Select Your Preferred Nursery Song
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
-                    We have hundreds of questions from top tech companies.
-                    Choose a type to get started.
+                  Make learning a delightful experience by choosing your favorite nursery rhyme or song. Pick the melody that brings you comfort and joy as we turn complex concepts into memorable rhymes that harmonize with your chosen tune.
                   </p>
                   <div>
                     <RadioGroup value={selected} onChange={setSelected}>
