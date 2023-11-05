@@ -35,22 +35,22 @@ const questions = [
 
 const interviewers = [
   {
+    id: "Sarah",
+    name: "Sarah",
+    description: "Sarah's voice is like a warm, comforting hug. Her narration is gentle and soothing, making complex concepts feel approachable and friendly. With Sarah as your guide, you'll embark on a learning journey that feels like a cozy storytelling session by the fireplace.",
+    level: "L7",
+  },
+  {
     id: "John",
     name: "John",
-    description: "Software Engineering",
+    description: "John's voice is a perfect blend of enthusiasm and clarity. He narrates with an energetic tone that brings excitement to learning. Complex ideas come to life in his words, making your educational experience dynamic and engaging. John's narration style is like a motivational coach for your learning adventure.",
     level: "L3",
   },
   {
     id: "Richard",
     name: "Richard",
-    description: "Product Management",
+    description: "Richard's voice is the epitome of wisdom and knowledge. He narrates with a calm and authoritative tone, providing a sense of confidence and trust in the material. Listening to Richard is like receiving guidance from a seasoned mentor, and he'll help you master complex concepts with poise and expertise.",
     level: "L5",
-  },
-  {
-    id: "Sarah",
-    name: "Sarah",
-    description: "Other",
-    level: "L7",
   },
 ];
 
@@ -1054,7 +1054,7 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    And an interviewer
+                    And an narrator / singer!
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
                     Choose whoever makes you feel comfortable. You can always
@@ -1456,7 +1456,7 @@ export default function DemoPage() {
                         d="M15.25 12L9.75 8.75V15.25L15.25 12Z"
                       ></path>
                     </svg>
-                    <p className="ml-[3px] mr-[6px]">Interview Vault</p>
+                    <p className="ml-[3px] mr-[6px]">Tunes Vault</p>
                     <div className="ml-auto text-[#121217] transform">
                       <svg
                         width="24"
@@ -1478,7 +1478,7 @@ export default function DemoPage() {
                   <li className="mt-1 list-none flex items-center rounded-[3px] relative bg-white text-gray-600 w-full m-0 cursor-pointer hover:bg-[#F7F7F8] focus:outline-none py-[4px]">
                     <div className="bg-[#e8e8ed] pointer-events-none absolute left-[7px] z-10 top-1/2 h-[3px] w-[3px] rounded-full transform -translate-y-1/2"></div>
                     <div className="text-gray-600 truncate pr-4 pl-[18px]">
-                      All Interviews
+                      All Tunes
                     </div>
                     <div className="absolute w-[1px] bg-[#e8e8ed] left-[8px] top-[9px] bottom-0"></div>
                   </li>
