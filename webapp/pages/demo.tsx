@@ -70,7 +70,7 @@ export default function DemoPage() {
   const [selectedInterviewer, setSelectedInterviewer] = useState(
     interviewers[0]
   );
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(true);
   const webcamRef = useRef<Webcam | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
