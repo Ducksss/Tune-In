@@ -1,0 +1,44 @@
+from pydub import AudioSegment
+import numpy as np
+
+# Load the speech clip
+speech_clip = AudioSegment.from_file("temp.mp3")
+
+# Define the desired pitch correction factor (adjust as needed)
+pitch_correction_factor = 2.0  # For example, double the pitch
+
+# Convert the speech clip to a NumPy array for processing
+speech_data = np.array(speech_clip.get_array_of_samples())
+
+# Apply the pitch correction by multiplying the pitch correction factor
+corrected_speech_data = speech_data * pitch_correction_factor
+
+# Convert the corrected audio data back to an AudioSegment
+corrected_speech_clip = AudioSegment(
+    corrected_speech_data.tobytes(),
+    frame_rate=speech_clip.frame_rate,
+    sample_width=speech_clip.sample_width,
+    channels=speech_clip.channels,
+)
+
+# Save the corrected speech to a file
+corrected_speech_clip.export("corrected_speech.mp3", format="mp3")
+
+# Load the music clip
+music_clip = AudioSegment.from_file("bg - Copy.mp3")
+
+volume_adjustment_dB = -10
+
+lowered_music_clip = music_clip + volume_adjustment_dB
+
+# Load the corrected speech clip
+corrected_speech_clip = AudioSegment.from_file("sing.mp3")
+
+# Adjust the length of the speech clip to match the music clip if needed
+corrected_speech_clip = corrected_speech_clip[:len(lowered_music_clip)]
+
+# Combine the speech and music
+combined_audio = corrected_speech_clip.overlay(lowered_music_clip)
+
+# Export the combined audio
+combined_audio.export("final_audio2.mp3", format="mp3")

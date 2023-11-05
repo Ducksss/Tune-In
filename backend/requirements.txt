@@ -1,0 +1,7 @@
+Flask 
+flask_cors==3.0.10
+python-dotenv
+openai 
+Gunicorn
+elevenlabs
+python-dotenv
