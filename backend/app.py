@@ -40,7 +40,7 @@ def generate_lyrics():
         response = openai.ChatCompletion.create(
             engine=DEPLOYMENT_NAME,
             messages=[
-                {"role": "user", "content": f"""Generate a short song that is maximum 30 seconds long with the description of how the song should sound like and lyrics about """ + topic + """. Make the song catchy and memorable. Give the response only in JSON object formatted like the following
+                {"role": "user", "content": f"""Generate a short song that is 30 seconds long with the description of how the song should sound like and lyrics about """ + topic + """. Write the song to be catchy and memorable. Give the response only in JSON object formatted like the following
 {
     "description": string,
     "lyrics": string
@@ -65,12 +65,12 @@ def generate_lyrics():
         engine.setProperty("voice", voices[voiceNum].id)
         engine.save_to_file(lyrics, 'temp.mp3')
         engine.runAndWait()
-        sing = generate_voice(
-            text=lyrics, voice="Grace", model="eleven_monolingual_v1"
-        )
-        with open("sing2.mp3", "wb") as f:
-            f.write(sing)
-            f.close()
+        # sing = generate_voice(
+        #     text=". ".join(lyrics.split("\n")), voice="Taylor - Cute - Gentle", model="eleven_monolingual_v1"
+        # )
+        # with open("sing5.mp3", "wb") as f:
+        #     f.write(sing)
+        #     f.close()
         print("End Processing Lyrics")
 
         # Processing Music
@@ -83,7 +83,7 @@ def generate_lyrics():
         }
         audio_response = requests.post(API_URL, headers=headers, json=payload)
         audio_bytes = audio_response.content
-        with open("bg.mp3", 'wb') as f:
+        with open("bg1.mp3", 'wb') as f:
             f.write(audio_bytes)
             f.close()
         print("End Processing Music")
